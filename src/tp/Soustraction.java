@@ -14,5 +14,11 @@ public class Soustraction extends Operation {
     public String toString() {
         return "(" + gauche.toString() + " - " + droite.toString() + ")";
     }
+
+    @Override
+    protected String getOperator() {
+        return "-";
+    }
 }
+
 

@@ -10,7 +10,8 @@ public class Main {
                 new Addition(new Valeur(2), new Valeur(1))
         );
 
-        System.out.println("Expression : " + exp.toString());
+        System.out.println("Expression infixée : " + exp.toString());
+        System.out.println("Expression postfixée : " + exp.chainePostFixée());
         System.out.println("Résultat : " + exp.evaluer());
     }
 }

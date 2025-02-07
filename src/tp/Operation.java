@@ -7,4 +7,12 @@ public abstract class Operation extends Expression {
         this.gauche = gauche;
         this.droite = droite;
     }
+
+    @Override
+    public String chainePostFixée() {
+        return gauche.chainePostFixée() + " " + droite.chainePostFixée() + " " + getOperator();
+    }
+
+    protected abstract String getOperator();
 }
+

@@ -16,4 +16,10 @@ public class Valeur extends Expression {
     public String toString() {
         return String.valueOf(this.valeur);
     }
+
+    @Override
+    public String chainePostFixée() {
+        return String.valueOf(valeur);
+    }
 }
+

@@ -16,4 +16,10 @@ public class Negation extends Expression {
     public String toString() {
         return "-(" + exp.toString() + ")";
     }
+
+    @Override
+    public String chainePostFixée() {
+        return exp.chainePostFixée() + " -";
+    }
 }
+
